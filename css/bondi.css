@@ -70,7 +70,6 @@ body{
     background: var(--dark-color);
     min-height: calc(100vh - 76px);
 }
-/*End Landing*/
 
 .main-title::after{
     content:'';
@@ -89,3 +88,4 @@ body{
     height: 150px;
     width: 240px;
 }
+/*End Landing*/
