@@ -1,6 +1,8 @@
 :root{
     --dark-color: #19283f;
     --green-color: #3ba5ec;
+    --darkBlue-color: #0d6efd;
+    --white-color: #fff;
 }
 
 body{
@@ -8,9 +10,19 @@ body{
     height: 10000px;
 }
 
+.main-btn{
+    background-color: var(--darkBlue-color);
+    color: var(--white-color);
+}
+
+.main-btn:hover{
+    background-color: var(--green-color);
+}
+
 /*Start Navbar*/
 .navbar{
     background-color: var(--dark-color);
+    box-shadow: 0 5px 25px rgba(1 1 1 / 25%);
 }
 
 .navbar-brand img{
@@ -52,9 +64,28 @@ body{
     box-shadow: none;
 }
 /*End Navbar*/
+
 /*Start Landing*/
 .landing{
     background: var(--dark-color);
     min-height: calc(100vh - 76px);
 }
 /*End Landing*/
+
+.main-title::after{
+    content:'';
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-title img{
+    display: flex;
+    margin: auto;
+    height: 150px;
+    width: 240px;
+}
