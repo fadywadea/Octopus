@@ -3,6 +3,7 @@
     --green-color: #3ba5ec;
     --darkBlue-color: #0d6efd;
     --white-color: #fff;
+    --section-color: #cbeffc; 
 }
 
 body{
@@ -88,4 +89,21 @@ body{
     height: 150px;
     width: 240px;
 }
+
 /*End Landing*/
+
+/*Start Features*/
+.features .icon-holder{
+    height: 200px;
+}
+
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .icon{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+/*End Features*/
