@@ -24,12 +24,15 @@ body{
 .navbar{
     background-color: var(--dark-color);
     box-shadow: 0 5px 25px rgba(1 1 1 / 25%);
+    height: 65px;
 }
 
 .navbar-brand img{
-    display: flex;
     height: 50px;
     width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar .navbar-nav .nav-link{
@@ -122,14 +125,38 @@ body{
     min-height: 100vh;
 }
 
-.side-image{
-    background-image: url("OCT.jpeg");
-    background-position: center;
+.row{
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow:  5px 5px 10px 1px rgb(0, 0, 0,0.2);
 }
 
-.img{
+.side-image{
+    background-image: url("");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 0 10px 0 10px;
+}
+
+.side-image img{
     width: 35px;
     position: absolute;
     top: 30px;
     left: 30px;
+}
+
+.text{
+    position: absolute;
+    transform: translateX(-50%);
+    top: 50%;
+    left: 50%;
+}
+
+.text p{
+    color: #0d6efd;
+    font-size: 18px;
 }
